@@ -11,7 +11,7 @@ Tasks:
 - `Rancher Rollback Last Upgrade`
 - `Rancher Finish Last Upgrade`
 
-[Rancher Upgrader Parameters](images/rancher-parameters.png)
+![Rancher Upgrader Parameters](images/rancher-parameters.png)
 
 Parameters include:
 
