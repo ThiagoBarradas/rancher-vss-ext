@@ -2,11 +2,10 @@
     "manifestVersion": 1,
     "id": "rancher",
     "publisher": "ThiagoBarradas",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "name": "Rancher Upgrader",
     "description": "Easy upgrade, rollback and finiish upgrade in your rancher cluster",
     "public": true,
-    "minimumAgentVersion": "1.92.0",
     "categories": [
         "Azure Pipelines"
     ],
