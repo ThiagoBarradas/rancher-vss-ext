@@ -45,7 +45,7 @@ function run() {
             }
             // execute upgrade
             var result = yield tl.exec('docker', args);
-            if (!result) {
+            if (result > 0) {
                 tl.setResult(tl.TaskResult.Failed, "------------- Ops, upgrade failed!");
             }
         }

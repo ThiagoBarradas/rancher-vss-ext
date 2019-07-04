@@ -28,7 +28,7 @@ async function run() {
         // execute rollback
         var result = await tl.exec('docker', args);
 
-        if (!result) {
+        if (result > 0) {
             tl.setResult(tl.TaskResult.Failed, "------------- Ops, finish upgrade failed!");
         }
     }

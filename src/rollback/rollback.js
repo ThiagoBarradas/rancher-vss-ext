@@ -33,7 +33,7 @@ function run() {
             }
             // execute rollback
             var result = yield tl.exec('docker', args);
-            if (!result) {
+            if (result > 0) {
                 tl.setResult(tl.TaskResult.Failed, "------------- Ops, rollback failed!");
             }
         }
