@@ -1,0 +1,88 @@
+{
+    "id": "b07f3415-0818-4108-b90c-d0255f37b7d2",
+    "name": "upgrade",
+    "friendlyName": "Rancher Upgrade Service",
+    "description": "Upgrade a service in your Rancher cluster",
+    "helpMarkDown": "[More Information](https://github.com/ThiagoBarradas/rancher-vss-ext)",
+    "author": "Thiago Barradas",
+    "preview": false,
+    "showEnvironmentVariables": true,
+    "instanceNameFormat" : "Rancher Upgrade Service",
+    "category": "Deploy",
+    "visibility": [
+        "Release"
+    ],
+    "runsOn": [
+      "Agent",
+      "MachineGroup",
+      "Server"
+    ],
+    "version": {
+      "Major": 1,
+      "Minor": 0,
+      "Patch": 0
+    },
+    "inputs": [
+      {
+        "name": "url",
+        "type": "string",
+        "label": "Service API URl",
+        "defaultValue": "",
+        "required": true,
+        "helpMarkDown": "e.g. http://rancher.mycompany.com:8080/v2-beta/projects/{projectId}}/services/{serviceId}"
+      },
+      {
+        "name": "accessKey",
+        "type": "string",
+        "label": "Access Key",
+        "defaultValue": "",
+        "required": true,
+        "helpMarkDown": "Access Key generated in Rancher ('API' > 'Keys')"
+      },
+      {
+        "name": "secretKey",
+        "type": "string",
+        "label": "Secret Key",
+        "defaultValue": "",
+        "required": true,
+        "helpMarkDown": "Secret Key generated in Rancher ('API' > 'Keys')"
+      },
+      {
+        "name": "force",
+        "type": "boolean",
+        "label": "Force Finish",
+        "defaultValue": "true",
+        "required": false,
+        "helpMarkDown": "Force finish before upgrade, if last finish is pending"
+      },
+      {
+        "name": "wait",
+        "type": "boolean",
+        "label": "Wait Complete",
+        "defaultValue": "true",
+        "required": false,
+        "helpMarkDown": "Wait upgrade and new services up"
+      },
+      {
+        "name": "image",
+        "type": "string",
+        "label": "Image",
+        "defaultValue": "",
+        "required": false,
+        "helpMarkDown": "Image slug name or full address. e.g. docker.azurecr.io/xxx/my-image"
+      },
+      {
+        "name": "tag",
+        "type": "string",
+        "label": "Tag",
+        "defaultValue": "",
+        "required": false,
+        "helpMarkDown": "New tag. e.g. 'master-20190701.1', '1.5.3' or 'latest'"
+      }
+    ],
+    "execution": {
+      "Node": {
+        "target": "upgrade.js"
+      }
+    }
+  }

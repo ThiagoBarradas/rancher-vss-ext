@@ -1,0 +1,29 @@
+{
+  "name": "rancher-vss-ext",
+  "version": "1.0.3",
+  "description": "Rancher Upgrader for Azure DevOps",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "azure",
+    "devops",
+    "rancher",
+    "docker",
+    "orchestration",
+    "deploy",
+    "rollback",
+    "upgrade",
+    "release"
+  ],
+  "author": "Thiago Barradas",
+  "license": "MIT",
+  "dependencies": {
+    "azure-pipelines-task-lib": "^2.8.0"
+  },
+  "devDependencies": {
+    "@types/node": "^8.5.1",
+    "@types/q": "^1.0.6"
+  }
+}

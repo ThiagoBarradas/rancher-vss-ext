@@ -1,0 +1,37 @@
+{
+    "manifestVersion": 1,
+    "contributions": [
+        {
+            "id": "upgrade-task",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "upgrade"
+            }
+        },
+        {
+            "id": "rollback-task",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "rollback"
+            }
+        },
+        {
+            "id": "finish-task",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "finish"
+            }
+        }
+    ],
+    "scopes": [],
+    "contributionTypes": []
+}

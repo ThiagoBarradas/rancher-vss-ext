@@ -1,0 +1,64 @@
+{
+  "id": "d07f3415-0818-4108-b90c-d0255f37b7d2",
+  "name": "rollback",
+  "friendlyName": "Rancher Rollback Last Upgrade",
+  "description": "Rollback last upgrade in your Rancher cluster",
+  "helpMarkDown": "[More Information](https://github.com/ThiagoBarradas/rancher-vss-ext)",
+  "author": "Thiago Barradas",
+  "preview": false,
+  "showEnvironmentVariables": true,
+  "instanceNameFormat" : "Rancher Rollback Last Upgrade",
+  "category": "Deploy",
+  "visibility": [
+      "Release"
+  ],
+  "runsOn": [
+    "Agent",
+    "MachineGroup",
+    "Server"
+  ],
+  "version": {
+    "Major": 1,
+    "Minor": 0,
+    "Patch": 0
+  },
+  "inputs": [
+    {
+      "name": "url",
+      "type": "string",
+      "label": "Service API URl",
+      "defaultValue": "",
+      "required": true,
+      "helpMarkDown": "e.g. http://rancher.mycompany.com:8080/v2-beta/projects/{projectId}}/services/{serviceId}"
+    },
+    {
+      "name": "accessKey",
+      "type": "string",
+      "label": "Access Key",
+      "defaultValue": "",
+      "required": true,
+      "helpMarkDown": "Access Key generated in Rancher ('API' > 'Keys')"
+    },
+    {
+      "name": "secretKey",
+      "type": "string",
+      "label": "Secret Key",
+      "defaultValue": "",
+      "required": true,
+      "helpMarkDown": "Secret Key generated in Rancher ('API' > 'Keys')"
+    },
+    {
+      "name": "wait",
+      "type": "boolean",
+      "label": "Wait Complete",
+      "defaultValue": "true",
+      "required": false,
+      "helpMarkDown": "Wait rollback finish"
+    }
+  ],
+  "execution": {
+    "Node": {
+      "target": "rollback.js"
+    }
+  }
+}

@@ -1,0 +1,95 @@
+{
+    "manifestVersion": 1,
+    "id": "rancher",
+    "publisher": "ThiagoBarradas",
+    "version": "1.0.3",
+    "name": "Rancher Upgrader",
+    "description": "Easy upgrade, rollback and finiish upgrade in your rancher cluster",
+    "public": true,
+    "minimumAgentVersion": "1.92.0",
+    "categories": [
+        "Azure Pipelines"
+    ],
+    "tags": [
+        "deploy",
+        "rollback",
+        "docker",
+        "container",
+        "orchestration",
+        "release",
+        "upgrade",
+        "complete"
+    ],
+    "links": {
+        "support": { "uri": "https://github.com/ThiagoBarradas/rancher-vss-ext" }
+    },
+    "icons": {
+        "default": "images/extension-icon.png"
+    },
+    "targets": [
+        { "id": "Microsoft.VisualStudio.Services" }
+    ],
+    "content": {
+        "details": { "path": "README.md" },
+        "license": { "path": "LICENSE" }
+    },
+    "contributions": [
+        {
+            "id": "upgrade-task",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": { "name": "upgrade" }
+        },
+        {
+            "id": "rollback-task",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": { "name": "rollback" }
+        },
+        {
+            "id": "finish-task",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": { "name": "finish" }
+        }
+    ],
+    "files": [
+        { 
+            "path": "images", 
+            "addressable": true 
+        },
+        { 
+            "path": "src/upgrade" ,
+            "packagePath": "upgrade" 
+        },
+        { 
+            "path": "src/rollback",
+            "packagePath": "rollback" 
+        },
+        { 
+            "path": "src/finish",
+            "packagePath": "finish" 
+        },
+        { 
+            "path": "node_modules", 
+            "addressable": true,
+            "packagePath": "upgrade/node_modules" 
+        },
+        { 
+            "path": "node_modules", 
+            "addressable": true,
+            "packagePath": "rollback/node_modules" 
+        },
+        { 
+            "path": "node_modules", 
+            "addressable": true,
+            "packagePath": "finish/node_modules" 
+        }
+    ]
+}
