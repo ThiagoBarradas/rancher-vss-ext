@@ -20,7 +20,7 @@
     "version": {
       "Major": 1,
       "Minor": 0,
-      "Patch": 4
+      "Patch": 5
     },
     "inputs": [
       {
@@ -53,7 +53,7 @@
         "label": "Force Finish",
         "defaultValue": "true",
         "required": false,
-        "helpMarkDown": "Force finish before upgrade, if last finish is pending"
+        "helpMarkDown": "Force finish before upgrade, if last upgrade is pending"
       },
       {
         "name": "wait",
