@@ -47,7 +47,7 @@
         },
         {
             "id": "rollback-task",
-            "type": "ms.vss-distributed-task.task",
+            "type": "ms.vss-distributed-task.tasks",
             "targets": [
                 "ms.vss-distributed-task.tasks"
             ],
