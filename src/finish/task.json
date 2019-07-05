@@ -7,28 +7,13 @@
   "author": "Thiago Barradas",
   "preview": false,
   "showEnvironmentVariables": true,
-  "instanceNameFormat" : "Rancher Finiish Last Upgrade",
+  "instanceNameFormat" : "Rancher Finish Last Upgrade",
   "category": "Deploy",
   "version": {
     "Major": 1,
     "Minor": 0,
-    "Patch": 9
+    "Patch": 10
   },
-  "visibility": [
-      "Release"
-  ],
-  "groups": [
-    {
-        "name": "advanced",
-        "displayName": "Advanced",
-        "isExpanded": false
-    }
-  ],
-  "runsOn": [
-    "Agent",
-    "MachineGroup",
-    "Server"
-  ],
   "inputs": [
     {
       "name": "url",
