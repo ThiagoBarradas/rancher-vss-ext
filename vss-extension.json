@@ -2,7 +2,7 @@
     "manifestVersion": 1,
     "id": "rancher",
     "publisher": "ThiagoBarradas",
-    "version": "1.0.7",
+    "version": "1.0.8",
     "name": "Rancher Upgrader",
     "description": "Easy upgrade, rollback and finiish upgrade in your rancher cluster",
     "public": true,
@@ -20,7 +20,7 @@
         "complete"
     ],
     "links": {
-        "support": { "uri": "https://github.com/ThiagoBarradas/rancher-vss-ext" }
+        "support": { "uri": "https://github.com/ThiagoBarradas/rancher-vss-ext/issues" }
     },
     "icons": {
         "default": "images/extension-icon.png"
@@ -31,6 +31,10 @@
     "content": {
         "details": { "path": "README.md" },
         "license": { "path": "LICENSE" }
+    },
+    "repository": {
+        "type": "git",
+        "uri": "https://github.com/ThiagoBarradas/rancher-vss-ext"
     },
     "contributions": [
         {
@@ -77,17 +81,14 @@
         },
         { 
             "path": "node_modules", 
-            "addressable": true,
             "packagePath": "upgrade/node_modules" 
         },
         { 
             "path": "node_modules", 
-            "addressable": true,
             "packagePath": "rollback/node_modules" 
         },
         { 
             "path": "node_modules", 
-            "addressable": true,
             "packagePath": "finish/node_modules" 
         }
     ]

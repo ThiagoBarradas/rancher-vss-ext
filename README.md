@@ -25,7 +25,7 @@ Parameters include:
 
 ## Release notes
 
-**New in 1.0.7**
+**New in 1.0.8**
 - First version with basic commands;
 - Upgrade service;
 - Rollback last upgrade;

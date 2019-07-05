@@ -43,4 +43,3 @@ function run() {
     });
 }
 run();
-//# sourceMappingURL=rollback.js.map
