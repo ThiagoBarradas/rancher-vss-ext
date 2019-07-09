@@ -25,7 +25,7 @@ async function run() {
             args.push("--wait");
         }
         
-        // execute rollback
+        // execute finish 
         var result = await tl.exec('docker', args);
 
         if (result > 0) {

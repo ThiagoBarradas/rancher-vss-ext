@@ -2,8 +2,8 @@
     "manifestVersion": 1,
     "id": "rancher",
     "publisher": "ThiagoBarradas",
-    "version": "1.0.12",
-    "name": "Rancher Upg1rader",
+    "version": "1.0.13",
+    "name": "Rancher Upgrader",
     "description": "Easy upgrade, rollback and finiish upgrade in your rancher cluster",
     "public": true,
     "categories": [
@@ -51,7 +51,7 @@
         },
         {
             "id": "rollback-task",
-            "type": "ms.vss-distributed-task.tasks",
+            "type": "ms.vss-distributed-task.task",
             "targets": [
                 "ms.vss-distributed-task.tasks"
             ],

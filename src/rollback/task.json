@@ -1,5 +1,5 @@
 {
-  "id": "d07f3415-0818-4108-b90c-d0255f37b7d2",
+  "id": "d9873415-0818-4108-b90c-d0255f37b7d2",
   "name": "rollback",
   "friendlyName": "Rancher Rollback Last Upgrade",
   "description": "Rollback last upgrade in your Rancher cluster",
@@ -12,7 +12,7 @@
   "version": {
     "Major": 1,
     "Minor": 0,
-    "Patch": 12
+    "Patch": 13
   },
   "inputs": [
     {
