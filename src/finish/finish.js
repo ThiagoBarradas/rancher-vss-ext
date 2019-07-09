@@ -31,7 +31,7 @@ function run() {
             if (wait) {
                 args.push("--wait");
             }
-            // execute rollback
+            // execute finish 
             var result = yield tl.exec('docker', args);
             if (result > 0) {
                 tl.setResult(tl.TaskResult.Failed, "------------- Ops, finish upgrade failed!");
