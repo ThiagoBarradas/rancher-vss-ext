@@ -5,16 +5,24 @@ Easy upgrade, rollback and finiish upgrade in your rancher cluster.
 ## Usage
 Add a new task, select **Rancher Upgrader** from the **Deploy** category and configure it as needed.
 
-Tasks: 
+### Tasks: 
 
 - `Rancher Upgrader Service`
 - `Rancher Rollback Last Upgrade`
 - `Rancher Finish Last Upgrade`
 - `Rancher Get Current Version`
 
-![Rancher Upgrader Parameters](images/rancher-parameters.png)
+## Env Var Ouput:
 
-Parameters include:
+For task `Rancher Get Current Version`: 
+
+- `RANCHER_CURRENT_IMAGE` 
+- `RANCHER_CURRENT_TAG`
+
+
+### Parameters include:
+
+![Rancher Upgrader Parameters](images/rancher-parameters.png)
 
 - **Service API Url**: Ranchel API URL to service. e.g. http://rancher.mycompany.com:8080/v2-beta/projects/{projectId}}/services/{serviceId}
 - **Access Key**: Access Key generated in Rancher ('API' > 'Keys')
@@ -26,8 +34,11 @@ Parameters include:
 
 ## Release notes
 
+**New in 1.0.17**
+- Add docs for env vars output;
+
 **New in 1.0.16**
-- First version with basic commands;
+- Add get current version task;
 
 **New in 1.0.15**
 - First version with basic commands;

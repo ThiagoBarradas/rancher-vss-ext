@@ -1,9 +1,9 @@
 {
   "id": "c07f0123-0818-4108-b90c-d0255f37b7d2",
   "name": "getcurrentversion",
-  "friendlyName": "Rancher Get Current Versiono",
+  "friendlyName": "Rancher Get Current Version",
   "description": "Get current image version from Rancher service",
-  "helpMarkDown": "[More Information](https://github.com/ThiagoBarradas/rancher-vss-ext)",
+  "helpMarkDown": "Env Var Output: RANCHER_CURRENT_IMAGE and RANCHER_CURRENT_TAG \n[More Information](https://github.com/ThiagoBarradas/rancher-vss-ext)",
   "author": "Thiago Barradas",
   "preview": false,
   "showEnvironmentVariables": true,
@@ -12,7 +12,7 @@
   "version": {
     "Major": 1,
     "Minor": 0,
-    "Patch": 16
+    "Patch": 17
   },
   "inputs": [
     {
