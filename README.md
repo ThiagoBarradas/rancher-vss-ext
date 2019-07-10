@@ -26,10 +26,10 @@ Parameters include:
 
 ## Release notes
 
-**New in 1.0.15**
+**New in 1.0.16**
 - First version with basic commands;
 
-**New in 1.0.14**
+**New in 1.0.15**
 - First version with basic commands;
 - Upgrade service;
 - Rollback last upgrade;

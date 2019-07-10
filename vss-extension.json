@@ -2,7 +2,7 @@
     "manifestVersion": 1,
     "id": "rancher",
     "publisher": "ThiagoBarradas",
-    "version": "1.0.15",
+    "version": "1.0.16",
     "name": "Rancher Upgrader",
     "description": "Easy upgrade, rollback and finiish upgrade in your rancher cluster",
     "public": true,
@@ -92,6 +92,10 @@
             "packagePath": "finish" 
         },
         { 
+            "path": "src/getcurrentversion",
+            "packagePath": "getcurrentversion" 
+        },
+        { 
             "path": "node_modules", 
             "packagePath": "upgrade/node_modules" 
         },
@@ -102,6 +106,10 @@
         { 
             "path": "node_modules", 
             "packagePath": "finish/node_modules" 
+        },
+        { 
+            "path": "node_modules", 
+            "packagePath": "getcurrentversion/node_modules" 
         }
     ]
 }
