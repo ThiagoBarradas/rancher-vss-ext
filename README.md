@@ -34,13 +34,14 @@ For task `Rancher Get Current Version`:
 
 ## Release notes
 
-**New in 1.0.17**
+**New in 1.0.18**
+- Fix get current version task output;
 - Add docs for env vars output;
 
-**New in 1.0.16**
+**New in 1.0.17**
 - Add get current version task;
 
-**New in 1.0.15**
+**New in 1.0.16**
 - First version with basic commands;
 - Upgrade service;
 - Rollback last upgrade;
