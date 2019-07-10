@@ -38,7 +38,7 @@ function run() {
             var fullImage = content.launchConfig.imageUuid.replace("docker:", "");
             var imageParts = fullImage.split(":");
             tl.setVariable("RANCHER_CURRENT_IMAGE", imageParts[0]);
-            tl.setVariable("RANCHER_CURRENT_IMAGE", imageParts[1]);
+            tl.setVariable("RANCHER_CURRENT_TAG", imageParts[1]);
         }
         catch (err) {
             tl.setResult(tl.TaskResult.Failed, err.message);
