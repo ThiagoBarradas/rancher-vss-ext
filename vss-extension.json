@@ -2,7 +2,7 @@
     "manifestVersion": 1,
     "id": "rancher",
     "publisher": "ThiagoBarradas",
-    "version": "1.0.14",
+    "version": "1.0.15",
     "name": "Rancher Upgrader",
     "description": "Easy upgrade, rollback and finiish upgrade in your rancher cluster",
     "public": true,
@@ -64,6 +64,14 @@
                 "ms.vss-distributed-task.tasks"
             ],
             "properties": { "name": "finish" }
+        },
+        {
+            "id": "getcurrentversion-task",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": { "name": "getcurrentversion" }
         }
     ],
     "files": [

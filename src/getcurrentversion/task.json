@@ -1,13 +1,13 @@
 {
-  "id": "d07f3415-0818-4108-b90c-d0255f37b7d2",
-  "name": "rollback",
-  "friendlyName": "Rancher Rollback Last Upgrade",
-  "description": "Rollback last upgrade in your Rancher cluster",
+  "id": "c07f0123-0818-4108-b90c-d0255f37b7d2",
+  "name": "getcurrentversion",
+  "friendlyName": "Rancher Get Current Versiono",
+  "description": "Get current image version from Rancher service",
   "helpMarkDown": "[More Information](https://github.com/ThiagoBarradas/rancher-vss-ext)",
   "author": "Thiago Barradas",
   "preview": false,
   "showEnvironmentVariables": true,
-  "instanceNameFormat" : "Rancher Rollback Last Upgrade",
+  "instanceNameFormat" : "Rancher Get Current Version",
   "category": "Deploy",
   "version": {
     "Major": 1,
@@ -38,19 +38,11 @@
       "defaultValue": "",
       "required": true,
       "helpMarkDown": "Secret Key generated in Rancher ('API' > 'Keys')"
-    },
-    {
-      "name": "wait",
-      "type": "boolean",
-      "label": "Wait Complete",
-      "defaultValue": "true",
-      "required": false,
-      "helpMarkDown": "Wait rollback finish"
     }
   ],
   "execution": {
     "Node": {
-      "target": "rollback.js"
+      "target": "getcurrentversion.js"
     }
   }
 }

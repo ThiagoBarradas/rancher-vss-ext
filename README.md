@@ -10,6 +10,7 @@ Tasks:
 - `Rancher Upgrader Service`
 - `Rancher Rollback Last Upgrade`
 - `Rancher Finish Last Upgrade`
+- `Rancher Get Current Version`
 
 ![Rancher Upgrader Parameters](images/rancher-parameters.png)
 
@@ -21,11 +22,14 @@ Parameters include:
 - **Force Finish**: Force finish before upgrade, if last upgrade is pending
 - **Wait Complete**: Wait upgrade and new services up
 - **Image**: Image slug name or full address. e.g. docker.azurecr.io/xxx/my-image
-- **Tag**: 
+- **Tag**: New tag. e.g. 'master-20190701.1', '1.5.3' or 'latest'
 
 ## Release notes
 
-**New in 1.0.13**
+**New in 1.0.15**
+- First version with basic commands;
+
+**New in 1.0.14**
 - First version with basic commands;
 - Upgrade service;
 - Rollback last upgrade;
