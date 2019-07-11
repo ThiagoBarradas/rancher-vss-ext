@@ -31,6 +31,7 @@ For task `Rancher Get Current Version`:
 - **Wait Complete**: Wait upgrade and new services up
 - **Image**: Image slug name or full address. e.g. docker.azurecr.io/xxx/my-image
 - **Tag**: New tag. e.g. 'master-20190701.1', '1.5.3' or 'latest'
+- **Save result and use as cache**: Save current version in artifact and use as cache when call this task other time in the same pipeline
 
 ## Release notes
 
