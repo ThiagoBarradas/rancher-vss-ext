@@ -1,6 +1,6 @@
 {
   "name": "rancher-vss-ext",
-  "version": "1.0.22",
+  "version": "#{version_major}#.#{version_minor}#.#{version_patch}#",
   "description": "Rancher Upgrader for Azure DevOps",
   "main": "index.js",
   "scripts": {

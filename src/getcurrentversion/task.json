@@ -10,9 +10,9 @@
   "instanceNameFormat" : "Rancher Get Current Version",
   "category": "Deploy",
   "version": {
-    "Major": 1,
-    "Minor": 0,
-    "Patch": 22
+    "Major": "#{version_major}#",
+    "Minor": "#{version_minor}#",
+    "Patch": "#{version_patch}#"
   },
   "inputs": [
     {
@@ -38,14 +38,6 @@
       "defaultValue": "",
       "required": true,
       "helpMarkDown": "Secret Key generated in Rancher ('API' > 'Keys')"
-    },
-    {
-      "name": "saveAndCache",
-      "type": "boolean",
-      "label": "Save result and use as cache",
-      "defaultValue": "true",
-      "required": false,
-      "helpMarkDown": "Save result in artifact and use as cache when call this task other time in the same release pipeline"
     }
   ],
   "OutputVariables": [

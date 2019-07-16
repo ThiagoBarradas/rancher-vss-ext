@@ -2,7 +2,7 @@
     "manifestVersion": 1,
     "id": "rancher",
     "publisher": "ThiagoBarradas",
-    "version": "1.0.22",
+    "version": "#{version_major}#.#{version_minor}#.#{version_patch}#",
     "name": "Rancher Upgrader",
     "description": "Easy upgrade, rollback and finiish upgrade in your rancher cluster",
     "public": true,
@@ -34,7 +34,7 @@
     ],
     "content": {
         "details": { "path": "README.md" },
-        "license": { "path": "LICENSE" }
+        "license": { "path": "LICENSE.md" }
     },
     "repository": {
         "type": "git",
