@@ -39,12 +39,9 @@ async function run() {
 
         tl.setVariable("RANCHER_CURRENT_IMAGE", image);
         tl.setVariable("RANCHER_CURRENT_TAG", tag);
-
-        console.log("Full Image: " + fullImage);
+        
         console.log("Image: " + image);
         console.log("Tag: " + tag);
-        console.log("RANCHER_CURRENT_IMAGE: " + tl.getVariable("RANCHER_CURRENT_IMAGE"));
-        console.log("RANCHER_CURRENT_TAG: " + tl.getVariable("RANCHER_CURRENT_TAG"));
     }
     catch (err) {
         tl.setResult(tl.TaskResult.Failed, err.message);
