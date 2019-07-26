@@ -42,11 +42,11 @@
   ],
   "OutputVariables": [
     {
-      "name" : "GETCURRENTVERSION.RANCHER_CURRENT_IMAGE",
+      "name" : "RANCHER_CURRENT_IMAGE",
       "description" : "Current image slug name or full address. e.g. docker.azurecr.io/xxx/my-image"
     }, 
     {
-      "name" : "GETCURRENTVERSION.RANCHER_CURRENT_TAG",
+      "name" : "RANCHER_CURRENT_TAG",
       "description" : "Current tag. e.g. 'master-20190701.1', '1.5.3' or 'latest'"
     } 
   ],
