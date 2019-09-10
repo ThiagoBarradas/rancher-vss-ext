@@ -56,6 +56,14 @@
       "helpMarkDown": "Wait upgrade and new services up"
     },
     {
+      "name": "installDocker",
+      "type": "boolean",
+      "label": "Install Docker",
+      "defaultValue": "true",
+      "required": false,
+      "helpMarkDown": "This task needs docker to work, if you haven't it installed, check this box. Works only with linux"
+    },
+    {
       "name": "image",
       "type": "string",
       "label": "Image",
@@ -70,6 +78,22 @@
       "defaultValue": "",
       "required": false,
       "helpMarkDown": "New tag. e.g. 'master-20190701.1', '1.5.3' or 'latest'"
+    },
+    {
+      "name": "prefixVars",
+      "type": "string",
+      "label": "Environment Vars Prefix",
+      "defaultValue": "",
+      "required": false,
+      "helpMarkDown": "Import all env vars with this prefix to container"
+    },
+    {
+      "name": "manualVars",
+      "type": "multiLine",
+      "label": "Additional Environment Vars",
+      "defaultValue": "",
+      "required": false,
+      "helpMarkDown": "Import this env vars to container"
     }
   ],
   "execution": {
