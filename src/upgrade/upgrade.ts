@@ -48,7 +48,7 @@ async function run() {
         if (prefixVars) {
             tl.getVariables().forEach(function (variable) {
                 if (variable.name.startsWith(prefixVars)) {
-                    args.push("--env=\"" + variable.name + "=" + variable.value + "\"");
+                    args.push("-e", variable.name + "=" + variable.value);
                 }
             });
         }
@@ -61,7 +61,7 @@ async function run() {
                     value = "";
                 }
 
-                args.push("--env=\"" + varName + "=" + value + "\"");
+                args.push("-e", varName + "=" + value);
             });
         }
 
