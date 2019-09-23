@@ -16,7 +16,7 @@ async function run() {
         args.push('run');
         args.push('thiagobarradas/rancher-upgrader');
         args.push('execute');
-        args.push('finish');
+        args.push('finishupgrade');
         args.push('--url=' + url);
         args.push('--user=' + accessKey);
         args.push('--pass=' + secretKey);
