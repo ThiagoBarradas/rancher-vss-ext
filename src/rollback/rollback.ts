@@ -7,9 +7,12 @@ async function run() {
         var accessKey: string = tl.getInput('accessKey', true)
         var secretKey: string = tl.getInput('secretKey', true)
         var wait: boolean = tl.getBoolInput('wait', false);
-
+        var installDocker: boolean = tl.getBoolInput('installDocker', false);
+        
         // install tools
-        await tl.exec('sudo', ["apt", "install", "docker", "-y"]);
+        if (installDocker) {
+            await tl.exec('sudo', ["apt", "install", "docker", "-y"]);
+        }
         
         // mount command
         const args: Array<string> = new Array<string>();

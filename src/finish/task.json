@@ -46,6 +46,14 @@
       "defaultValue": "true",
       "required": false,
       "helpMarkDown": "Wait upgrade finish"
+    },
+    {
+      "name": "installDocker",
+      "type": "boolean",
+      "label": "Install Docker",
+      "defaultValue": "true",
+      "required": false,
+      "helpMarkDown": "This task needs docker to work, if you haven't it installed, check this box. Works only with linux"
     }
   ],
   "execution": {
