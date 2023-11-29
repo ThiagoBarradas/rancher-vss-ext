@@ -57,6 +57,7 @@ async function run() {
             var vars = manualVars.replace("\r\n","\n").split("\n");
             vars.forEach(function (varName) {
                 var value = tl.getVariable(varName);
+                value.replace("=", "");
                 if (value == null) {
                     value = "";
                 }
